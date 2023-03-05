@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <py-script>print('poop')</py-script>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <h1>Welcome to SAT GAME!</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center bg-success">
+                <a href="{{ url_for('match') }}">Matching Game</a>
+                <div class="card" style="width: 18rem;">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Matching Game</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 text-center bg-success">
+                <a href="{{ url_for('choice') }}">Choice</a>
+            </div>
+            <div class="col-md-4 text-center bg-success">
+                <a href="{{ url_for('definition') }}">Definition</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Matching Game</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
